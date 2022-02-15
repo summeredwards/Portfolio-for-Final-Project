@@ -1,0 +1,339 @@
+#container{
+	width:100%;
+	margin:0px auto; 
+	background-color:rgb(105, 111, 103); 
+	padding:0px;
+	box-sizing:border-box;
+
+  	display: grid;
+  	grid-template-columns: repeat(12, 8.333%);
+}
+
+.left{
+	text-align:left;
+	margin:10px;
+}
+
+.bigfullbox{
+	background: url(../img/paint.png);
+	margin:0px;
+	padding:200px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12; 
+	grid-row-end: span 4;
+	font-family: 'header';
+	font-size: 30px;
+	color:rgb(198,184,164); 
+}
+
+.fullbox{
+	margin:10px;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+	font-family: 'type';
+	color:rgb(23, 18, 20);
+	font-size: 18px;
+}
+
+.halfbox{
+	background-color:rgb(19,39,31);
+	margin:0px;
+	padding:10px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 6;
+	font-family: 'header';
+	color:rgb(237, 226, 217);  /*42,20,80*/ 
+}
+
+.halfboxbottom{
+	background-color:rgb(40,46,37);
+	margin:0px;
+	padding:10px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 6;
+	font-family: 'header';
+	color:rgb(198,184,164);  /*42,20,80*/
+}
+
+.thirdbox{
+	margin-top:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 4;
+}
+
+nav{
+	width:100%;
+	margin:10px 0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:right; 
+}
+nav.nav2{
+	width:100%;
+	margin:10px 0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; 
+}
+nav ul{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+nav ul li{
+	display:inline-block;
+	margin:0px 10px;
+	padding:10px;
+}
+nav a{
+	text-decoration:none;
+}
+
+a.a1:link{
+	color:rgb(237, 226, 217);
+}
+
+a.a1:visited{
+	color:rgb(237, 226, 217);
+}
+
+a.a1:hover{
+	color:rgb(257, 246, 237);
+}
+a.a2:link{
+	color:rgb(237, 226, 217);
+}
+
+a.a2:visited{
+	color:rgb(237, 226, 217);
+}
+
+a.a2:hover{
+	color:rgb(105, 111, 103);
+}
+
+@media all and (min-width:900px) and (max-width:1300px){
+	.left{
+	text-align:center;
+	margin:10px;
+}
+
+nav{
+	width:100%;
+	margin:10px 0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; 
+}
+
+.halfbox{
+	background-color:rgb(19,39,31);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+	font-family: 'header';
+	color:rgb(237, 226, 217);  /*42,20,80*/ 
+}
+
+.thirdbox{
+	margin-top:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 6;
+}
+
+.halfboxbottom{
+	background-color:rgb(40,46,37);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+	font-family: 'header';
+	color:rgb(198,184,164);  /*42,20,80*/
+}
+
+}
+
+@media all and (min-width:599px) and (max-width:899px){
+.left{
+	text-align:center;
+	margin:10px;
+}
+
+nav{
+	width:100%;
+	margin:10px 0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; 
+}
+
+.halfbox{
+	background-color:rgb(19,39,31);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+	font-family: 'header';
+	color:rgb(237, 226, 217);  /*42,20,80*/ 
+}
+
+.thirdbox{
+	margin-top:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+}
+
+.halfboxbottom{
+	background-color:rgb(40,46,37);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+	font-family: 'header';
+	color:rgb(198,184,164);  /*42,20,80*/
+}
+}
+
+@media all and (max-width:600px){
+
+.left{
+	text-align:center;
+	margin:10px;
+}
+
+nav{
+	width:100%;
+	margin:10px 0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; 
+}
+
+.halfbox{
+	background-color:rgb(19,39,31);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+	font-family: 'header';
+	color:rgb(237, 226, 217);  /*42,20,80*/ 
+}
+
+.thirdbox{
+	margin-top:auto;
+	margin-right:auto;
+	margin-bottom:auto;
+	margin-left:auto;
+	padding:20px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+}
+
+.halfboxbottom{
+	background-color:rgb(40,46,37);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12;
+	font-family: 'header';
+	color:rgb(198,184,164);  /*42,20,80*/
+}
+
+a.a1:link{
+	color:rgb(237, 226, 217);
+	font-size: 12px;
+}
+
+a.a1:visited{
+	color:rgb(237, 226, 217);
+	font-size: 12px;
+}
+
+a.a1:hover{
+	color:rgb(257, 246, 237);
+	font-size: 12px;
+}
+a.a2:link{
+	color:rgb(237, 226, 217);
+	font-size: 12px;
+}
+
+a.a2:visited{
+	color:rgb(237, 226, 217);
+	font-size: 12px;
+}
+
+a.a2:hover{
+	color:rgb(105, 111, 103);
+	font-size: 12px;
+}
+
+.bigfullbox{
+	/*background-color:rgb(40,46,37);*/
+	background: url(../img/paint.png);
+	margin:0px;
+	padding:200px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12; 
+	grid-row-end: span 4;
+	font-family: 'header';
+	font-size: 20px;
+	color:rgb(198,184,164); 
+}
+}
+
+@font-face {
+    font-family: 'type';
+    src: url('../fonts/smalltypewriting-webfont.eot');
+    src: url('../fonts/smalltypewriting-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/smalltypewriting-webfont.woff2') format('woff2'),
+         url('../fonts/smalltypewriting-webfont.woff') format('woff'),
+         url('../fonts/smalltypewriting-webfont.ttf') format('truetype'),
+         url('../fonts/smalltypewriting-webfont.svg#smalltypewritingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'header';
+    src: url('../fonts/oxygen-regular-webfont.eot');
+    src: url('../fonts/oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oxygen-regular-webfont.woff2') format('woff2'),
+         url('../fonts/oxygen-regular-webfont.woff') format('woff'),
+         url('../fonts/oxygen-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oxygen-regular-webfont.svg#oxygenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
